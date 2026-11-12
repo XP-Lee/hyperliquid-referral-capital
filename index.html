@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3eb">
+  <title>Who Actually Brings Capital to Hyperliquid? Referral Data from 19,112 Accounts</title>
+  <meta name="description" content="Analysis of 19,112 Hyperliquid accounts with at least $10,000 in account value. See which referral channels are linked to the largest balances.">
+  <link rel="canonical" href="https://xp-lee.github.io/hyperliquid-referral-capital/">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Xp / Onchain Notes">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Who Actually Brings Capital to Hyperliquid?">
+  <meta property="og:description" content="Referral data from 19,112 Hyperliquid accounts holding at least $10,000 shows why signup counts and account balances tell different stories.">
+  <meta property="og:url" content="https://xp-lee.github.io/hyperliquid-referral-capital/">
+  <meta property="og:image" content="https://xp-lee.github.io/hyperliquid-referral-capital/assets/social-card.png">
+  <meta property="og:image:secure_url" content="https://xp-lee.github.io/hyperliquid-referral-capital/assets/social-card.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Who Actually Brings Capital to Hyperliquid? Referral data from 19,112 accounts.">
+  <meta property="article:author" content="https://x.com/xbxlxp_lee">
+  <meta property="article:section" content="Capital &amp; distribution">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xbxlxp_lee">
+  <meta name="twitter:creator" content="@xbxlxp_lee">
+  <meta name="twitter:title" content="Who Actually Brings Capital to Hyperliquid?">
+  <meta name="twitter:description" content="Referral data from 19,112 Hyperliquid accounts holding at least $10,000 shows why signup counts and account balances tell different stories.">
+  <meta name="twitter:image" content="https://xp-lee.github.io/hyperliquid-referral-capital/assets/social-card.png">
+  <meta name="twitter:image:alt" content="Who Actually Brings Capital to Hyperliquid? Referral data from 19,112 accounts.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://xp-lee.github.io/hyperliquid-referral-capital/",
+    "headline": "Who Actually Brings Capital to Hyperliquid? Referral Data from 19,112 Accounts",
+    "description": "Analysis of referral attribution for 19,112 Hyperliquid leaderboard accounts with at least $10,000 in account value.",
+    "inLanguage": "en",
+    "author": {"@type": "Person", "name": "Xp", "url": "https://x.com/xbxlxp_lee"},
+    "image": [
+      "https://xp-lee.github.io/hyperliquid-referral-capital/assets/social-card.png",
+      "https://xp-lee.github.io/hyperliquid-referral-capital/assets/referral-share-by-account-value.png"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#article">Skip to article</a>
+  <header class="masthead">
+    <a href="https://xp-lee.github.io/">Xp / Onchain Notes</a>
+    <a href="https://x.com/xbxlxp_lee">@xbxlxp_lee <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="article">
+    <article>
+      <header class="intro">
+        <p class="eyebrow">Capital &amp; distribution</p>
+        <h1>Who Actually Brings Capital to Hyperliquid? <span>Referral Data from 19,112 Accounts</span></h1>
+        <p class="deck">Half of the Hyperliquid leaderboard accounts holding at least $10,000 had a referrer. The biggest signup channels and the channels associated with the most $10K+ accounts often ranked very differently.</p>
+        <p class="byline">By <a href="https://x.com/xbxlxp_lee">Xp</a> · BD at AlphaNet · ~5 min read</p>
+        <p class="byline">Data snapshot: <time datetime="2026-11-11">November 11, 2026</time></p>
+      </header>
+
+      <aside class="findings" aria-labelledby="findings-title">
+        <h2 id="findings-title">Key findings</h2>
+        <ul>
+          <li><strong>9,526 of 19,112 accounts</strong> in the $10K+ leaderboard sample had a recorded referrer.</li>
+          <li><strong>MetaMask, Rabby, and trade.xyz</strong> accounted for 3,385 referred $10K+ accounts. Those accounts held about $1.7B at the snapshot.</li>
+          <li><strong>Signup totals differed sharply from $10K+ account counts.</strong> Phantom referred about 210,000 users, of whom 101 held at least $10,000 at the snapshot.</li>
+        </ul>
+      </aside>
+
+      <div class="prose">
+        <p>One app on Hyperliquid, Invo, has referred more than 100,000 users. Exactly one appeared in the $10K+ leaderboard sample. Meanwhile, three wallets and front ends were associated with 3,385 such accounts.</p>
+        <p>For anyone building distribution on Hyperliquid, it matters whether the goal is signups, trading fees, or reaching accounts with substantial balances. The same channel can rank very differently on each measure.</p>
+
+        <h2 id="how-we-measured">How we measured</h2>
+        <p>We took every account on the public Hyperliquid leaderboard with at least $10,000 in account value: 19,112 accounts as of November 11, 2026. We looked up each account’s recorded referrer, pulled the stats for each referrer we found, and grouped accounts into three value bands: $1M+, $100K to under $1M, and $10K to under $100K.</p>
+        <p>Hyperliquid’s public referral data records which code an account used and reports how many users a code has referred and how much it has earned. Under the referral terms described in the research, referrers receive 10% of eligible trading fees after the user discount on the first $1B of volume. Referred users get a 4% fee discount on their first $25M, and an address can create a code after trading $10,000.</p>
+
+        <h2 id="share-by-account-value">About half of the $10K+ accounts had a referrer</h2>
+        <p>Of the 19,112 accounts, 9,526 had a referrer. The share fell as account value rose: <strong>71%</strong> for $10K to under $100K, <strong>44%</strong> for $100K to under $1M, and <strong>35%</strong> for $1M+.</p>
+        <figure>
+          <a href="./assets/referral-share-by-account-value.png"><img src="./assets/referral-share-by-account-value.png" width="1344" height="596" loading="lazy" decoding="async" alt="Referral share by account value: 71% of 5,170 accounts in the $10K to $100K band, 44% of 11,465 in the $100K to $1M band, and 35% of 2,477 in the $1M+ band."></a>
+          <figcaption>Figure 1. Share of Hyperliquid accounts with a referrer, by account value. Source: Hyperliquid public leaderboard and referral API, November 11, 2026.</figcaption>
+        </figure>
+        <p>One possible explanation is that larger traders are more familiar with perpetuals venues and less likely to choose where to trade based on a fee discount. The referral data does not tell us why a trader used a code. It does show that referrals were more common below $1M, including in the $100K to $1M band that contains most of the accounts in the sample.</p>
+
+        <h2 id="top-referrers">Wallets and front ends led by $10K+ accounts</h2>
+        <p>MetaMask referred <strong>1,883</strong> accounts holding $10K+, including 149 holding $1M+. Rabby referred <strong>1,065</strong>, including 73 holding $1M+. trade.xyz referred <strong>437</strong>, including 35 holding $1M+. Together they accounted for 3,385 accounts, more than a third of all referred $10K+ accounts in the sample. Those accounts held about $1.7B in combined account value.</p>
+        <figure>
+          <a href="./assets/top-referrers-by-10k-accounts.png"><img src="./assets/top-referrers-by-10k-accounts.png" width="1344" height="762" loading="lazy" decoding="async" alt="Ranking of referrers by accounts holding at least $10,000. MetaMask led with 1,883, followed by Rabby with 1,065 and trade.xyz with 437."></a>
+          <figcaption>Figure 2. Referrers ranked by referred accounts holding at least $10,000. Codes belonging to the same product are combined. Source: Hyperliquid referral API, November 11, 2026.</figcaption>
+        </figure>
+        <p>The rest of the top ten included Liminal, CCXT, Phantom, LogX, Trust Wallet, OneKey, and an early community code. That code was associated with 169 accounts holding $10K+, including 31 holding $1M+, with about $274M in combined account value.</p>
+        <p>Many of the leading channels are tools traders already use: wallets that hold their keys, terminals they use to trade, or libraries their bots run on. Existing trust is one plausible reason those channels show up in this ranking; the referral records do not measure trust directly.</p>
+
+        <h2 id="signups-and-capital">Signups and account value tell different stories</h2>
+        <p>Per 1,000 all-time referred users, the early community code had 61 accounts in the $10K+ snapshot. Rabby had 22, OneKey 19, Liminal 16, MetaMask 13, and trade.xyz 10.</p>
+        <p>Phantom had about 210,000 referred users, the most among the referrers we found, and roughly $31M in referral rewards. Of those users, 101 appeared in the $10K+ sample, about 0.48 per 1,000. CoinDCX had about 113,000 referrals and 10 $10K+ accounts. Invo had about 100,000 referrals and one $10K+ account.</p>
+        <figure>
+          <a href="./assets/10k-accounts-per-1000-referrals.png"><img src="./assets/10k-accounts-per-1000-referrals.png" width="1344" height="922" loading="lazy" decoding="async" alt="Accounts holding at least $10,000 per 1,000 all-time referrals: early community code 61, Rabby 22, MetaMask 13, Phantom 0.48, CoinDCX 0.09, and Invo 0.01."></a>
+          <figcaption>Figure 3. Accounts holding at least $10,000 per 1,000 all-time referred users. The numerator is a November 11, 2026 snapshot; the denominator covers the full referral history.</figcaption>
+        </figure>
+        <p>The ratios span more than three orders of magnitude among the examples above. Channels with many smaller accounts can still generate substantial trading fees, as Phantom’s referral rewards illustrate. If the goal is to reach accounts with substantial balances, referral counts alone are a poor proxy.</p>
+
+        <h2 id="implications">What this means for traders and builders</h2>
+        <p>For traders, the data offers a way to see which tools show up most often in the referral records of larger accounts. For builders and referral partners, it gives a reason to track account value alongside signups and fees when comparing channels.</p>
+        <p>At AlphaNet, we run quantitative strategies in users’ own Hyperliquid accounts. We care about how much capital users keep deployed as well as how many sign up. This snapshot helps us decide which distribution channels to study further.</p>
+
+        <h2 id="methodology">Methodology &amp; limits</h2>
+        <p>The sample covers all 19,112 accounts with at least $10,000 in account value on the public leaderboard at the November 11, 2026 snapshot. Accounts outside that leaderboard are not included. MetaMask, trade.xyz, and OneKey each have two codes in the data; those codes are grouped by product. Individual wallets and personal codes are not named.</p>
+        <p><strong>Account value is a point-in-time balance.</strong> It does not measure net deposits, retained capital, or how much incremental capital a referrer caused. The numerator and denominator of the per-1,000 comparison cover different windows, so the ratio is not a cohort conversion rate.</p>
+        <p class="sources"><strong>Data sources:</strong> <a href="https://app.hyperliquid.xyz/leaderboard">Hyperliquid public leaderboard</a> and <a href="https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint">Hyperliquid Info API documentation</a>.</p>
+      </div>
+
+      <footer class="article-footer">
+        <p>Xp works in business development at AlphaNet. This article reflects personal views.</p>
+        <nav aria-label="Related research">
+          <a href="https://xp-lee.github.io/">More from Onchain Notes</a>
+          <a href="https://xp-lee.github.io/hyperliquid-vaults-vs-alphanet-ai-trading-strategies/">Hyperliquid Vaults vs. AlphaNet AI Trading Strategies</a>
+        </nav>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
